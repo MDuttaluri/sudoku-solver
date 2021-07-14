@@ -8,3 +8,21 @@
   place-items: center;
 }
 
+
+
+button{
+  border:1px outset black;
+  outline: none;
+  
+  background-color: white;
+  height:30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 0px black;
+  transition: background-color 0.2s,border-color 0.2s,box-shadow 0.2s;
+  &:hover{
+    background-color: bisque;
+    border-color: bisque;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.434);
+  }
+
+}
