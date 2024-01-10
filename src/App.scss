@@ -1,14 +1,35 @@
 .centerDiv__outer{
   display: flex;
   justify-content: center;
+  overflow: auto;
+
 }
 .centerDiv__outer--grid{
   display: grid;
   justify-content: center;
   place-items: center;
+  overflow: auto;
 }
 
+.respGrid{
+  padding:5px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+}
 
+input{
+  cursor: default;
+  font-size: 16px;
+}
+
+.buttonArray{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
 
 button{
   border:1px outset black;

@@ -1,110 +1,6 @@
 
-/* [
-     [
-         "5",
-         "3",
-         "",
-         "",
-         "7",
-         "",
-         "",
-         "",
-         ""
-     ],
-     [
-         "6",
-         "",
-         "",
-         "1",
-         "9",
-         "5",
-         "",
-         "",
-         ""
-     ],
-     [
-         "",
-         "9",
-         "8",
-         "",
-         "",
-         "",
-         "",
-         "6",
-         ""
-     ],
-     [
-         "8",
-         "",
-         "",
-         "",
-         "6",
-         "",
-         "",
-         "",
-         "3"
-     ],
-     [
-         "4",
-         "",
-         "",
-         "8",
-         "",
-         "3",
-         "",
-         "",
-         "1"
-     ],
-     [
-         "7",
-         "",
-         "",
-         "",
-         "2",
-         "",
-         "",
-         "",
-         "6"
-     ],
-     [
-         "",
-         "6",
-         "",
-         "",
-         "",
-         "",
-         "2",
-         "8",
-         ""
-     ],
-     [
-         "",
-         "",
-         "",
-         "4",
-         "1",
-         "9",
-         "",
-         "",
-         "5"
-     ],
-     [
-         "",
-         "",
-         "",
-         "",
-         "8",
-         "",
-         "",
-         "7",
-         "9"
-     ]
- ]*/
-
-
-
 export function solveSudoku(board) {
-    console.log(board);
+   // console.log(board);
     let l = board.length
     let finalGrid = []
     let reachedFinal = false
@@ -170,6 +66,7 @@ export function solveSudoku(board) {
             return true
         }
         if (board[i][j] !== "") {
+            
             if (i + 1 < l)
                 return driver(i + 1, j, needToDo)
             else if (j + 1 < l)
@@ -220,6 +117,7 @@ export function solveSudoku(board) {
     }
     reachedFinal = false
     driver(0, 0, needToFill)
+
     return finalGrid
 
 }
